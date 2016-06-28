@@ -10,7 +10,7 @@ div.output_subarea {
 {%- endblock html_head -%}
 
 {%- block input -%}
-	{%- if cell.metadata.hideCode -%}
+	{%- if true -%}
 		<div></div>
 	{%- else -%}
 		{{ super() }}
@@ -18,7 +18,7 @@ div.output_subarea {
 {%- endblock input -%}
 
 {%- block in_prompt -%}
-	{%- if cell.metadata.hidePrompt -%}
+	{%- if true -%}
 		<div class="prompt input_prompt"></div>
 	{%- else -%}
 		{{ super() }}
